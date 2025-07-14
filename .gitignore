@@ -1,0 +1,89 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Jupyter/Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Environnements virtuels
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+.Python
+
+# VSCode
+.vscode/
+.settings/
+
+# Données sensibles
+.env
+.env.*
+*.env
+*.secret
+secrets.json
+config.json
+
+# MacOS / Linux / Windows système
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# Cache pip/pytest/coverage
+pip-wheel-metadata/
+pip-log.txt
+*.cover
+*.pyc
+*.pyo
+.cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+pytestdebug.log
+
+# Modèles/outputs AI
+*.ckpt
+*.pth
+*.pt
+*.h5
+*.onnx
+*.tflite
+*.mlmodel
+*.pb
+*.gguf
+*.safetensors
+
+# Dossiers data ou résultats volumineux
+data/
+data-raw/
+results/
+output/
+outputs/
+logs/
+
+# Fichiers Markdown exportés
+*.md~
+*.md.bak
+
+# Dossiers d'extraction temporaire
+tmp/
+temp/
+__temp__/
