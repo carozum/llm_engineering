@@ -1,46 +1,61 @@
-# Octime - Optimisez la gestion de vos ressources humaines
+```markdown
+# Brochure du Groupe Octime
 
 ## Qui sommes-nous ?
 
-Le **Groupe Octime** est un leader en solutions de gestion du temps et de planification des ressources humaines, fort de 25 ans d’expérience. Nous développons des outils modulables adaptés tant aux TPE qu'aux grandes entreprises, visant une amélioration significative de la performance organisationnelle.
+**OCTIME** est le leader en gestion du temps et de la planification des ressources humaines, avec **25 ans d’expertise** et plus de **1,6 million d'utilisateurs**. Nous proposons des **solutions modulaires** et **adaptables** au service de la performance organisationnelle. Que vous soyez une TPE ou une grande entreprise, nos outils facilitent votre gestion des temps, des plannings et des absences.
 
-Avec **OCTIME**, **OCTIME Expresso**, et **STAFFELIO**, nous vous offrons des solutions innovantes pour la gestion des temps, des plannings, des absences, et bien plus.
+## Nos Solutions
 
-## Nos solutions
+### **OCTIME**
+- **Logiciel modulaire** pour la gestion des temps de travail
+- Adapté aux diverses spécificités métiers et réglementations
 
-### OCTIME
-Une solution modulaire pour s’adapter à toutes vos spécificités métiers. Optimisez la gestion des heures, des absences, et des congés avec un suivi sécurisé et paramétrable.
+### **OCTIME Expresso**
+- **Solution clé en main** idéale pour les TPE et PME
+- Spécifiquement conçue pour les organisations de 10 à 200 employés
 
-### OCTIME Expresso
-Une solution clé en main, parfaite pour les structures de 10 à 200 employés. Simple à utiliser, cette solution est conçue pour vous faire gagner du temps avec un minimum d’effort.
+### **STAFFELIO**
+- Outil dédié à la **gestion des remplacements et des renforts**
+- Intégration parfaite avec OCTIME
 
-### STAFFELIO
-Gestion intégrée des remplacements et des renforts, permettant de faciliter la planification opérationnelle tout en respectant les normes en vigueur.
+### Formations
+- **Formations digitales** et **en présentiel** pour une montée en compétences rapide
+- Modules personnalisés selon vos besoins
 
-## Notre approche unique
+## Une approche unique
 
-Notre philosophie repose sur un **accompagnement** de proximité. Nos équipes d’experts sont là pour piloter votre projet et s’assurer de sa réussite. Grâce à un service client réactif et un support technique disponible 24h/24, nous garantissons une relation durable et de confiance.
+Notre modèle d’accompagnement repose sur **la fidélisation de nos experts**, garantissant ainsi un suivi de projet sur le long terme. Chaque client bénéficie d'un soutien personnalisé grâce à notre équipe d'experts : chefs de projets, formateurs et consultants.
 
-### Les témoignages de nos clients
+## Culture d'entreprise
 
-> *"OCTIME simplifie la gestion des plannings et des remplacements, nous permettant de mieux accompagner nos équipes."*  
-> — Hélène Jacq, Cadre de santé
+Chez Octime, nous valorisons un environnement de travail dynamique et inclusif qui encourage l’innovation. Notre équipe est notre plus grand atout, et nous nous engageons à offrir un cadre de travail stimulant, avec des opportunités de développement personnel et professionnel.
 
-> *"Une solution parfaitement adaptée à nos besoins, sans nécessiter de développements supplémentaires."*  
-> — Pierre Bariat, Responsable administratif et financier
+## Témoignages de nos Clients
 
-## Rejoignez notre équipe
+> "OCTIME est simple d’utilisation, intuitive, et facilement paramétrable. Nous l'utilisons dans tous nos points de vente sur l’ensemble du territoire."  
+> — Virginie MILESI, Directrice des Ressources Humaines
 
-Le Groupe Octime est en pleine croissance et recrute régulièrement des talents. Si vous cherchez à rejoindre une équipe dynamique dans un environnement innovant, **visitez notre site** pour en savoir plus sur nos opportunités de carrière.
+> "Nous avons gagné du temps pour mieux accompagner les personnes dans les services."  
+> — Hélène JACQ, Cadre de santé
 
-## Contactez-nous
+## Rejoignez-nous
 
-Pour plus d'informations ou pour demander une démo de nos solutions, n'hésitez pas à **nous contacter** :
+Le Groupe Octime recrute ! Si vous êtes passionné par les solutions RH et que vous souhaitez faire partie d'une équipe innovante, consultez nos offres d’emploi sur notre site.
 
-**Téléphone :** 05 59 38 26 66  
-**Adresse :** 2, Allée de l’innovation, 64300 Biron  
-**Email :** [Contactez-nous](mailto:contact@octime.com)
+## Contact
 
----
+Pour toute demande de démo ou d’informations supplémentaires, n’hésitez pas à nous contacter au :  
+**Téléphone : 05 59 38 26 66**  
+**Email : contact@octime.fr**  
+** Adresse : 2, Allée de l’innovation, 64300 Biron**
 
-**Optimisez votre gestion des temps RH avec le Groupe Octime - Rejoignez notre communauté de 1,6 millions d'utilisateurs !**
+### Suivez-nous sur nos réseaux
+- [Twitter](#)
+- [LinkedIn](#)
+- [Facebook](#)
+
+**Optimisez votre gestion des temps RH avec le Groupe Octime !**
+```
+
+This brochure captures key elements about Octime, tailored for the French-speaking market, ensuring clarity and professionalism while projecting an approachable tone.

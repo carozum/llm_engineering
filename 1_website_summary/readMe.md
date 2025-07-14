@@ -40,3 +40,6 @@ ollama
 
 # .env
 OPENAI_API_KEY= à compléter
+
+# Business application
+we've applied this to Summarization - a classic Gen AI use case to make a summary. This can be applied to any business vertical - summarizing the news, summarizing financial performance, summarizing a resume in a cover letter - the applications are limitless. Consider how you could apply Summarization in your business, and try prototyping a solution.
