@@ -6,47 +6,10 @@ load_dotenv()
 import streamlit as st
 
 # --- Providers ---------------------------------------------------------------
-def call_openai(messages: List[Dict], model="gpt-4o-mini") -> str:
-    from openai import OpenAI
-    key = os.getenv("OPENAI_API_KEY")
-    if not key:
-        return "⚠️ OPENAI_API_KEY manquant."
-    client = OpenAI(api_key=key)
-    # messages -> format OpenAI {role, content}
-    resp = client.chat.completions.create(
-        model=model,
-        messages=messages,
-        temperature=0.2,
-        max_tokens=800
-    )
-    return resp.choices[0].message.content
 
-def call_anthropic(messages: List[Dict], model="claude-3-5-sonnet-20240620") -> str:
-    import anthropic
-    key = os.getenv("ANTHROPIC_API_KEY")
-    if not key:
-        return "⚠️ ANTHROPIC_API_KEY manquant."
-    client = anthropic.Client(api_key=key)
-
-    # Convertir messages OpenAI-like vers Anthropic:
-    system = ""
-    content = []
-    for m in messages:
-        if m["role"] == "system":
-            system += m["content"] + "\n"
-        elif m["role"] in ("user", "assistant"):
-            content.append({"role": m["role"], "content": m["content"]})
-
-    resp = client.messages.create(
-        model=model,
-        max_tokens=800,
-        temperature=0.2,
-        system=system or None,
-        messages=content
-    )
-    # Concat text parts
-    return "".join(b.text for b in resp.content if b.type == "text")
-
+from call_anthropic import call_anthropic
+from call_openai import call_openai
+from call_gemini import call_gemini
 
 
 # --- Router ------------------------------------------------------------------
@@ -58,6 +21,7 @@ def call_model(provider: str, messages: List[Dict]) -> str:
     if provider == "gemini":
         return call_gemini(messages)
     return "⚠️ Provider inconnu."
+
 
 # --- UI ----------------------------------------------------------------------
 st.set_page_config(page_title="Mentor – MVP", page_icon="🧠", layout="centered")
