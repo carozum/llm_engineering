@@ -1,34 +1,36 @@
 
-# Briefing d'Investissement pour le Groupe Octime
+# Briefing d'Investissement - Octime
 
-## 1. Résumé Exécutif
-Le Groupe Octime est un leader dans le domaine des logiciels de gestion des ressources humaines (RH), spécialisé dans l'optimisation de la gestion des temps, plannings, absences et remplacements. Avec 25 ans d'expérience et une base de 1,6 million d'utilisateurs sur 15 500 sites, Octime propose des solutions modulaires qui s'adaptent à tous types d'organisations, de TPE à des entreprises de grande taille. L'entreprise met l'accent sur l'innovation et le développement continu, offrant aux clients des solutions SaaS flexibles.
+## Résumé Exécutif
+Octime est un leader reconnu dans le domaine de la gestion des ressources humaines avec 25 ans d'expertise dans le développement de solutions logicielles modulaire et clé en main. Avec un chiffre d'affaires de 36 millions d'euros en 2023 et une portée internationale croissante grâce à des acquisitions stratégiques, le groupe s'est imposé comme un acteur essentiel en France, notamment dans le secteur de la santé. Octime continue d'investir dans la recherche et le développement, avec plus de 10% de son chiffre d'affaires alloué à l'innovation technologique pour répondre à la demande croissante de digitalisation dans les ressources humaines.
 
-## 2. Tableau des Chiffres Clés
-| Métrique                 | Valeur                                |
-|--------------------------|---------------------------------------|
-| Utilisateurs             | 1,6 million                           |
-| Sites installés          | 15 500                                |
-| Clients                  | 3 000                                 |
-| Expérience               | 25 ans                                |
-| Solutions offertes        | OCTIME, OCTIME Expresso, STAFFELIO  |
+## Tableau des Chiffres Clés
 
-## 3. Innovations Récentes / Projets
-- **Version Modulaire OCTIME** : Permet aux entreprises de choisir des modules adaptés à leurs besoins spécifiques.
-- **OCTIME Expresso** : Une solution clé en main destinée aux TPE/PME (10 à 200 employés), offrant une configuration rapide et sans développement supplémentaire.
-- **STAFFELIO** : Plateforme intégrée pour la gestion des remplacements, qui optimise la planification.
-- **myOCTIME** : Application mobile permettant un accès facilité à la gestion des temps RH.
+| Indicateurs                     | Valeurs                  |
+|---------------------------------|-------------------------|
+| Chiffre d'affaires 2023        | 36 M€                   |
+| Nombre de clients               | 6 900                   |
+| Utilisateurs                    | 5,5 M                   |
+| Sites installés                 | 28 240                  |
+| Croissance annuelle             | 10% (depuis 10 ans)     |
+| Investissement R&D              | >10% du CA              |
+| Personnel global                | 300 (France et international) |
 
-## 4. Opportunités & Risques
-### Opportunités
-- Augmentation de la demande pour des solutions de gestion des RH efficaces et automatisées.
-- Croissance dans les secteurs publics et privés, avec des besoins croissants en gestion des temps et des activités.
-- Expansion potentielle dans de nouveaux segments de marché et géographies.
+## Innovations Récentes / Projets
+- Lancement de **STAFFELIO**, une plateforme intégrée pour la gestion des remplacements, enrichissant l'offre d'Octime.
+- Développement de l'application mobile **myOCTIME**, facilitant l'accès aux fonctionnalités RH.
+- Intégration de l'intelligence artificielle dans les solutions pour une planification RH optimisée.
 
-### Risques
-- Concurrence accrue sur le marché des logiciels RH avec de nouveaux entrants.
-- Dépendance à l'égard de la technologie SaaS, exposant l'entreprise à des risques de cybersécurité.
-- Changements réglementaires qui pourraient impacter la conception des produits.
+## Opportunités & Risques
+- **Opportunités :**
+  - Expansion continue à l'international, notamment en Espagne et en Amérique Latine.
+  - Croissance du marché pour des solutions RH digitales avec la tendance vers la flexibilité au travail.
+  - Renforcement de l'offre grâce à des partenariats stratégiques et des acquisitions ciblées.
 
-## 5. Conclusion pour Investisseurs
-Le Groupe Octime se positionne comme un acteur de premier plan sur le marché des logiciels de gestion des ressources humaines, grâce à son expérience, sa base client solide et ses pratiques d'innovation continue. Les investisseurs peuvent considérer Octime comme une opportunité de placement stratégique, compte tenu de son potentiel de croissance dans un secteur en pleine expansion et de sa capacité à s'adapter aux besoins changeants des entreprises. Une vigilance s'impose face aux risques de concurrence et de réglementation, mais les atouts d'Octime en font un candidat attrayant pour des investissements à long terme.
+- **Risques :**
+  - Concurrence croissante des solutions HR Tech innovantes.
+  - Dépendance vis-à-vis des réglementations complexes en matière de travail et de protection des données.
+  - Potentiel ralentissement économique impactant l'adoption de nouvelles solutions par les entreprises.
+
+## Conclusion pour les Investisseurs
+Octime représente une opportunité d'investissement attrayante en raison de son expertise consolidée sur le marché, de sa solide performance financière et de ses stratégies d'innovation et d'expansion. Son engagement envers le développement durable et l'intégration de nouvelles technologies positionne l'entreprise favorablement pour capter la demande croissante dans le secteur des ressources humaines. Les investisseurs devraient considérer Octime non seulement comme un leader dans son domaine, mais aussi comme une entreprise capable de s'adapter et d'évoluer avec les tendances du marché.

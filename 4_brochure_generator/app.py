@@ -95,7 +95,7 @@ oct = Website("https://www.octime.com")
 link_system_prompt = """
 You are provided with a list of links found on a company's website.
 Your goal is to identify pages that are most relevant for FINANCIAL ANALYSIS,
-such as Investor Relations, Financial Reports, Key Figures, Market Data, 
+such as News, Innovations, Investor Relations, Financial Reports, Key Figures, Market Data, 
 Annual Reports, Innovation pipeline, Strategic projects, and Partnerships.
 Respond in JSON as in this example:
 {
@@ -110,7 +110,7 @@ Respond in JSON as in this example:
 
 def get_links_user_prompt(website):
     user_prompt = f"Here is the list of links on the website of {website.url} - "
-    user_prompt += "please decide which of these are relevant web links for a brochure about the company, respond with the full https URL in JSON format. \
+    user_prompt += "please decide which of these are relevant web links for a financial brochure about the company, respond with the full https URL in JSON format. \
 Do not include Terms of Service, Privacy, email links.\n"
     user_prompt += "Links (some might be relative links):\n"
     user_prompt += "\n".join(website.links)
@@ -135,7 +135,7 @@ def get_links(url):
 
 huggingface = Website("https://huggingface.co")
 # print(huggingface.links)
-# print(get_links("https://huggingface.co"))
+print(get_links("https://octime.com"))
 
 
 # ############################################################################
@@ -267,7 +267,8 @@ async def arender_console(company_name: str, url: str):
     print()
 
 # asyncio.run(arender_console("HuggingFace", "https://huggingface.co"))
-asyncio.run(arender_console("Octime", "https://octime.com"))
+# asyncio.run(arender_console("Octime", "https://octime.com"))
+asyncio.run(arender_console("Reden Solar", "https://reden.solar/"))
 
 
 # ############################################################################

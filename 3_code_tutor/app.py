@@ -36,18 +36,21 @@ user_prompt = "Please give a detailed explanation to the following question: " +
 
 # messages
 
-
+messages = [
+    {"role": "system", "content": system_prompt},
+    {"role": "user", "content": user_prompt}
+]
 
 # Get gpt-4o-mini to answer, with streaming
 def stream_brochure_chunks(user_prompt):
     """
     Generator qui stream les morceaux de texte renvoyés par l'API OpenAI.
     """
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_prompt}
-    ]
-    stream = openai.chat.completions.create(model=MODEL_GPT, messages=messages,stream=True)
+    stream = openai.chat.completions.create(
+        model=MODEL_GPT, 
+        messages=messages,
+        stream=True)
+    
     for chunk in stream:
         delta = chunk.choices[0].delta.content or ''
         if delta:
@@ -58,9 +61,12 @@ for token in stream_brochure_chunks(user_prompt):
 
 
 # Get Llama 3.2 to answer
+# ollama pull llama3:8b
 
 # response = ollama.chat(model=MODEL_LLAMA, messages=messages)
 # reply = response['message']['content']
-# print(Markdown(reply))
+# print(reply)
 
-#yield from {book.get("author") for book in books if book.get("author")}
+
+
+# yield from {book.get("author") for book in books if book.get("author")}
