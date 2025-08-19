@@ -218,7 +218,7 @@ def rag_query(query: str, k: int, subject: str|None, year: str|None, chapters: l
         want = set(c.strip() for c in chapters if c.strip())
         filt = [h for h in hits if h["chap_set"] & want]
         hits = filt or hits
-
+    print(hits[:k])
     return hits[:k]
 
 
