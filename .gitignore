@@ -36,6 +36,8 @@ env.bak/
 *.secret
 secrets.json
 config.json
+chroma_data/
+data_uploads/
 
 # MacOS / Linux / Windows système
 .DS_Store

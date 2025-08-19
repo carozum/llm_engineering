@@ -15,6 +15,6 @@ def call_openai(messages: List[Dict], model="gpt-4o-mini") -> str:
         model=model,
         messages=messages,
         temperature=0.2,
-        max_tokens=800
+        # max_tokens=800
     )
     return resp.choices[0].message.content

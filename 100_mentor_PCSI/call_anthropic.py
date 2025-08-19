@@ -22,7 +22,7 @@ def call_anthropic(messages: List[Dict], model="claude-3-5-sonnet-20240620") -> 
 
     resp = client.messages.create(
         model=model,
-        max_tokens=800,
+        # max_tokens=800,
         temperature=0.2,
         system=system or None,
         messages=content
