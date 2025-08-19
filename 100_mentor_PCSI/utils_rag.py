@@ -191,33 +191,36 @@ def index_file_to_chroma(file_item: dict):
 
 def rag_query(query: str, k: int, subject: str|None, year: str|None, chapters: list[str]|None):
     col = get_collection()
-    where = {}
-    if subject: where["subject"] = subject
-    if year: where["year"] = year
 
-    res = col.query(query_texts=[query], n_results=k*3, where=where or None)
+    # --- NEW: construire where avec opérateur logique
+    filters = []
+    if subject:
+        filters.append({"subject": subject})      # valeurs scalaires (str/int/bool/None)
+    if year:
+        filters.append({"year": year})
+
+    where = {"$and": filters} if filters else None
+
+    # requête (n_results un peu plus grand pour post-filtrer chapters)
+    res = col.query(query_texts=[query], n_results=k*3, where=where)
 
     hits = []
     for i in range(len(res["ids"][0])):
         meta = res["metadatas"][0][i]
-        # sécuriser meta["chapters"] -> set
+        txt  = res["documents"][0][i]
+        # chapters est stocké en CSV côté Chroma
         chap_str = (meta.get("chapters") or "").strip()
-        chap_set = set([c.strip() for c in chap_str.split(",") if c.strip()])
-        meta["chapters"] = chap_str  # on laisse une string dans meta, conforme Chroma
-        hits.append({
-            "id": res["ids"][0][i],
-            "text": res["documents"][0][i],
-            "meta": meta,
-            "chap_set": chap_set,     # helper interne pour filtrage
-        })
+        chap_set = set(c.strip() for c in chap_str.split(",") if c.strip())
+        hits.append({"id": res["ids"][0][i], "text": txt, "meta": meta, "chap_set": chap_set})
 
-    # Filtre “chapters” si fourni
+    # Filtre optionnel sur chapters (intersection) en post-traitement
     if chapters:
-        want = set([c.strip() for c in chapters if c.strip()])
+        want = set(c.strip() for c in chapters if c.strip())
         filt = [h for h in hits if h["chap_set"] & want]
         hits = filt or hits
-    # print(hits[:k])
+
     return hits[:k]
+
 
 
 
