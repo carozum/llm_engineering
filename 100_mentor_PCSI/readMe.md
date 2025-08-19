@@ -1,16 +1,24 @@
 # MVP Mentor Prépa PC
 
 ## Technos
-Streamlit
+Streamlit, python
 
 ## Modèles 
-OpenAI
-Antrhopic
-Gemini
+- OpenAI
+- Antrhopic
+- Gemini
 
 ==> TODO Ajouter Deepseek
 
 ## Lancer
 
 pip install -r requirements.txt
+
 streamlit run app.py
+
+## Prévoir
+
+RAG
+
+Personnalisation
+

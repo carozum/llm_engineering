@@ -11,6 +11,11 @@ from call_anthropic import call_anthropic
 from call_openai import call_openai
 from call_gemini import call_gemini
 
+# --- upload ------------------------------------------------------------------
+
+from utils_upload import load_index, save_index
+import uuid, pathlib
+DATA_DIR = pathlib.Path("data_uploads")
 
 # --- Router ------------------------------------------------------------------
 def call_model(provider: str, messages: List[Dict]) -> str:
@@ -21,7 +26,6 @@ def call_model(provider: str, messages: List[Dict]) -> str:
     if provider == "gemini":
         return call_gemini(messages)
     return "⚠️ Provider inconnu."
-
 
 # --- UI ----------------------------------------------------------------------
 st.set_page_config(page_title="Mentor – MVP", page_icon="🧠", layout="centered")
@@ -39,8 +43,42 @@ st.session_state.provider = provider
 if st.sidebar.button("🗑️ Réinitialiser la conversation"):
     st.session_state.messages = [{"role":"system","content":"Tu es un tuteur bienveillant. Sois clair, étape par étape."}]
     st.rerun()
+    
+# --- Upload -------------------------------------------------------------------
 
-# Render historique (sans le system)
+st.sidebar.subheader("📎 Upload de documents")
+subject = st.sidebar.selectbox("Sujet", ["maths","physique", "chimie", "programmation"], index=0)
+year = st.sidebar.text_input("Année/Niveau", "PCSI-2025")
+chapters = st.sidebar.text_input("Chapitres (CSV)", "")
+
+file = st.sidebar.file_uploader("PDF / Image", type=["pdf","png","jpg","jpeg"])
+if st.sidebar.button("Uploader") and file is not None:
+    fid = uuid.uuid4().hex
+    ext = pathlib.Path(file.name).suffix.lower()
+    out = DATA_DIR / f"{fid}{ext}"
+    out.write_bytes(file.read())
+    idx = load_index()
+    idx.append({
+        "id": fid,
+        "name": file.name,
+        "path": str(out),
+        "subject": subject,
+        "year": year,
+        "chapters": [c.strip() for c in chapters.split(",") if c.strip()],
+        "kind": "pdf" if ext==".pdf" else "image"
+    })
+    save_index(idx)
+    st.sidebar.success(f"Fichier enregistré : {file.name}")
+
+with st.sidebar.expander("📚 Mes documents"):
+    idx = load_index()
+    if not idx:
+        st.caption("Aucun document.")
+    else:
+        for it in idx[-10:][::-1]:
+            st.write(f"- **{it['name']}** — {it['subject']} / {it['year']} / {', '.join(it['chapters']) or '–'}")
+
+# --- Chat multiturn UI + sauvegarde-----------------------------------------------------------
 for m in st.session_state.messages:
     if m["role"] in ("user","assistant"):
         with st.chat_message(m["role"]):
