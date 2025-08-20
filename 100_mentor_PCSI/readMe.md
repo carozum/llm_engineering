@@ -23,8 +23,10 @@ Streamlit --> bootstrap, python, Chroma --> QDrant, SQLite3 --> postGres
 - OpenAI
 - Antrhopic
 - Gemini
+- deepseek 
+==> TODO : affiner le choix des modèles parmis les fournisseurs en fonction du besoin et cas d'usage. 
 
-==> TODO Ajouter Deepseek
+
 
 ## Lancer
 
@@ -36,8 +38,9 @@ streamlit run app.py
 ## Feuille de route
 
 ✅ MVP 1 --- Streamlit (ci-dessus) : multiturn + choix modèle.
+[Gemini](https://ai.google.dev/gemini-api/docs/models?hl=fr#gemini-2.5-flash)
 
-    ➕ ajouter deepSeek comme modèle
+    ✅ MVP 1.3 ajouter deepSeek comme modèle
 
     ➕ Multi-modèles par sujet : p.ex. maths/physique → modèle de raisonnement fort ; éco/droit → modèle plus verbeux/structuré (références, définitions). On peut router par subject côté code (sélection du model=).
 
@@ -68,6 +71,8 @@ streamlit run app.py
 
         👉 Si on veut multi-utilisateurs, multi-sujets avec filtres (subject, year, chapters, visibility, owner), Qdrant est nettement plus robuste.
 
+    ==> adapter la réponse si pas de sources
+
     ==> pdf pas de lecture des images ?
 
     ==> visualisation des sources 
@@ -82,6 +87,8 @@ streamlit run app.py
     - RouterAgent (détecte le sujet + mode),
     - TutorAgent (Socratique / solution),
     - outils : retrieve(), vision_parse(), sympy_solve(), unit_check(), critic().
+
+    Dois remplacer les sélecteurs du RAG --> le LLM cherchera le thème, la date, le chaputre pour filtrer
 
 ➕ Authentification ou déployer des images différentes pour les différents utilisateur (version assistant personnel)
 
